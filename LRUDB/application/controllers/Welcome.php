@@ -264,6 +264,8 @@ echo json_encode($arr);
              	$cp1=copy($file1tmp ,  "uploadfile/". $file1name );
                 
                 
+                
+                
 
                                         $data=array(
                                  
@@ -298,5 +300,23 @@ echo json_encode($arr);
                        //  }
           
                  }
-        
+                 
+          // http://192.168.2.120/LRUDB/index.php/welcome/listfile
+               public  function  listfile() //อ่านไฟล์จาก directory
+               {
+                   $dir=base_url()."uploadfile/";
+                     if(is_dir( $dir ))
+                             {
+                                  if($dh=open($dir))
+                                          {
+                                              while(($file=readdir($dh)) != false )
+                                                      {
+                                                           echo $file;
+                                                           echo br();
+                                                      }
+                                          }
+                             }
+               }
+                       
+                 
 }
