@@ -649,7 +649,7 @@ TextView date1=(TextView) findViewById(R.id.date1);
     {
 
 
-        uploadFiletoServer(mCurrentPhotoPath, strURLUpload);
+      //  uploadFiletoServer(mCurrentPhotoPath, strURLUpload);
 
         ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         nameValuePairs.add(new BasicNameValuePair("date1",str_date1 ));
@@ -664,7 +664,8 @@ TextView date1=(TextView) findViewById(R.id.date1);
         nameValuePairs.add(new BasicNameValuePair("evaluation", spinner_evaluation.getSelectedItem().toString() ));
 
 
-
+        File storageDir = new File(strSDCardPathName);
+        String strFileName = storageDir.getName();
 
 /*
         File filePath= new File(mCurrentPhotoPath);
@@ -672,7 +673,7 @@ TextView date1=(TextView) findViewById(R.id.date1);
         String filename = fileList [0].getName().toString();
 */
 
-        nameValuePairs.add(new BasicNameValuePair("filUpload", mCurrentPhotoPath ));
+      //  nameValuePairs.add(new BasicNameValuePair("filUpload", strFileName ));
 
 /*
 
