@@ -50,7 +50,9 @@ public class SplashScreen extends Activity {
    //https://kkucleft.kku.ac.th/app_admin/index.php/welcome/checklogin
    //public  String  url_main="https://kkucleft.kku.ac.th/app_admin/";
 
-    public static String  url_main="http://192.168.2.120/LRUDB/";
+    //public static String  url_main="http://192.168.2.120/LRUDB/";   ip local
+
+    public static String  url_main="http://kk.lru.ac.th/LRUDB/";
 
 
    //   public static String ip="http://kkucleft.kku.ac.th/app_admin/";
